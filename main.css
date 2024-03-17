@@ -410,8 +410,8 @@ img {
 }
 
 dialog {
-  width: 98vw;
-  height: 98vh;
+  width: 70vw;
+  height: 78vh;
   margin: 1vh auto;
   border-radius: 8px;
   padding: 5px;
@@ -427,9 +427,11 @@ dialog ul {
 
 dialog img {
   margin-bottom: 40px;
+  margin-inline: auto;
 }
 
 dialog li {
+  margin-inline: auto;
   text-align: start;
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: rgba(0, 0, 0, 0.1);
@@ -440,6 +442,7 @@ dialog li {
 }
 
 dialog a {
+  margin-inline: auto;
   text-transform: capitalize;
   color: var(--dark);
   font-size: 2.2rem;
@@ -450,12 +453,13 @@ dialog a:active {
 }
 
 dialog button {
+  margin-inline: auto;
   margin-top: 20px;
   width: 250px;
-  border: 1px solid var(--brown);
+  border: 1px solid #141718;
   border-radius: 5px;
   padding: 5px;
-  background-color: var(--brown);
+  background-color: #f3f5f7;
 }
 
 dialog button:hover {
