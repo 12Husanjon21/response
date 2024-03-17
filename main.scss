@@ -551,6 +551,12 @@ img {
             display: flex;
             gap: 40px;
           }
+          @media screen and (max-width:1060px) {
+            ul {
+              flex-direction: column;
+              gap: 32px;
+            }
+          }
         }
           .title {
             background-color: inherit;
@@ -596,6 +602,7 @@ img {
               img {
                 width: 24px;
                 height: 24px;
+                cursor: pointer;
 
               }
             }
@@ -615,7 +622,7 @@ img {
             }
             
             .footer-top {
-              margin-top: 200px;
+              margin-top: 50px;
             }
             footer {
               flex-direction: column;
@@ -624,10 +631,6 @@ img {
             }
             h5 {
               margin-bottom: 40px;
-            }
-            ul {
-              flex-direction: column;
-              gap: 32px;
             }
             span {
               margin: auto;

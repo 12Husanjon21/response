@@ -462,47 +462,6 @@ dialog button:hover {
   color: rgba(0, 0, 0, 0.4);
 }
 
-@media screen and (max-width: 1060px) {
-  .cards {
-    height: 100%;
-  }
-  .inputs input:first-child {
-    padding-block: 10px;
-  }
-  .footer-top {
-    margin-top: 200px;
-  }
-  footer {
-    flex-direction: column;
-    height: 665px;
-    padding: 48px 32px 48px 25px;
-  }
-  ul {
-    flex-direction: column;
-  }
-  span {
-    margin: auto;
-    width: 100px;
-    height: 1px;
-  }
-  .title2 > img {
-    margin-bottom: 33px;
-    height: 24px;
-    width: 64px;
-  }
-  .title2 {
-    text-align: center;
-    flex-direction: column;
-  }
-  .title3 {
-    flex-direction: column;
-  }
-  .title3 img {
-    width: 20px;
-    height: 20px;
-    margin: auto;
-  }
-}
 .footer-top {
   margin: auto;
   padding-top: 101px;
@@ -550,8 +509,13 @@ footer {
 }
 footer ul {
   display: flex;
-  -moz-column-gap: 40px;
-       column-gap: 40px;
+  gap: 40px;
+}
+@media screen and (max-width: 1060px) {
+  footer ul {
+    flex-direction: column;
+    gap: 32px;
+  }
 }
 
 .title {
@@ -565,19 +529,19 @@ footer ul {
 }
 .title2 img {
   height: 24px;
-  width: 54px;
-  margin: auto;
+  width: 74px;
+  margin-inline: auto;
 }
 .title2 span {
   width: 1px;
   height: 24px;
   border: 1px solid #6c7275;
   margin-right: 32px;
-  margin: auto;
+  margin-inline: auto;
 }
 
 h5 {
-  margin: auto;
+  margin-inline: auto;
   color: #989C9E;
   font-size: 1.4rem;
   font-weight: 500;
@@ -586,13 +550,12 @@ h5 {
 .title3 {
   padding-block: 16px 20px;
   display: flex;
-  -moz-column-gap: 28px;
-       column-gap: 28px;
+  gap: 28px;
   border-top: 1px solid #6c7275;
   width: initial;
 }
 .title3 .a {
-  margin: auto;
+  margin-inline: auto;
   color: #fff;
 }
 .title3 div {
@@ -604,4 +567,44 @@ h5 {
 .title3 div img {
   width: 24px;
   height: 24px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1060px) {
+  .cards {
+    height: 100%;
+  }
+  .inputs input:first-child {
+    padding-block: 10px;
+  }
+  .footer-top {
+    margin-top: 50px;
+  }
+  footer {
+    flex-direction: column;
+    height: 665px;
+    padding: 48px 32px 48px 25px;
+  }
+  h5 {
+    margin-bottom: 40px;
+  }
+  span {
+    margin: auto;
+  }
+  .title2 > img {
+    height: 24px;
+    width: 74px;
+  }
+  .title2 {
+    text-align: center;
+    flex-direction: column;
+  }
+  .title3 {
+    flex-direction: column;
+  }
+  .title3 img {
+    width: 20px;
+    height: 20px;
+    margin: auto;
+  }
 }/*# sourceMappingURL=main.css.map */
