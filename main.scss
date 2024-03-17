@@ -511,6 +511,8 @@ img {
           padding-bottom: 93px;
           height: 360px;
           background-image: url(./images/Image\ Placeholder.png);
+          background-position: center;
+          position: relative;
           background-size: cover;
           p {
             font-size: 1.8rem;
@@ -528,21 +530,22 @@ img {
             align-items: center;
             margin-top: 32px;
             text-align: center;
-          }
-          .inputs input:first-child {
-            border-bottom: 2px solid black;
-            width: inherit;
-            height: 52px;
-            border: none;
-            padding: 10px;
-            background-color: #F2F4F6;
-          }
-          
-          .inputs input:nth-child(2) {
-            border: none;
-            font-size: 1.6rem;
-            cursor: pointer;
-            color: var(#6c7275);
+            input:first-child {
+              width: inherit;
+              height: 52px;
+              border: 1px solid #F2F4F6;
+              padding: 10px;
+              background-color: #F2F4F6;
+              border-bottom: 2px solid $gray50;
+            }
+            input:nth-child(2) {
+              border: none;
+              font-size: 1.4rem;
+              cursor: pointer;
+              color: var(#6c7275);
+              border-bottom: 2px solid $gray50;
+              padding: 17px;
+            }
           }
         }
         

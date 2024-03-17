@@ -472,6 +472,8 @@ dialog button:hover {
   padding-bottom: 93px;
   height: 360px;
   background-image: url(./images/Image\ Placeholder.png);
+  background-position: center;
+  position: relative;
   background-size: cover;
 }
 .footer-top p {
@@ -492,18 +494,20 @@ dialog button:hover {
   text-align: center;
 }
 .footer-top .inputs input:first-child {
-  border-bottom: 2px solid black;
   width: inherit;
   height: 52px;
-  border: none;
+  border: 1px solid #F2F4F6;
   padding: 10px;
   background-color: #F2F4F6;
+  border-bottom: 2px solid #6c7275;
 }
 .footer-top .inputs input:nth-child(2) {
   border: none;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   cursor: pointer;
   color: var(#6c7275);
+  border-bottom: 2px solid #6c7275;
+  padding: 17px;
 }
 
 footer {
